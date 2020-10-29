@@ -1,0 +1,507 @@
+{
+  "title": "KYC RISK INFORMATION",
+  "subTitle": "RISK SCORE CALCULATION",
+  "tabs": [
+    "INFO",
+    "PROFESSION"
+  ],
+  "eKycRiskInfoVersion": "1.0",
+  "description": "The financial institution shall have to conduct a risk assessment of new technology based electronic KYC mechanism to understand how it may be abused and put in place appropriate measures to prevent such abuse as per the circulars and Guidance issued by BFIU. The financial institution is also required to conduct customer risk assessment as mentioned in 6.3 of this Guideline",
+  "riskScoreWidget": [
+    {
+      "widgetType": "group",
+      "widgetOrder": "1",
+      "widgetId": "1",
+      "widgetDescription": "Type of On-boarding",
+      "widgetItem": [
+        {
+          "widgetType": "item",
+          "widgetDescription": "Branch/Relationship Manager",
+          "widgetItemRiskScore": "2",
+          "widgetItemRiskScoreType": "absulate"
+        },
+        {
+          "widgetType": "item",
+          "widgetDescription": "Direct Sales Agent",
+          "widgetItemRiskScore": "2",
+          "widgetItemRiskScoreType": "absulate"
+        },
+        {
+          "widgetType": "item",
+          "widgetDescription": "Walk-in",
+          "widgetItemRiskScore": "3",
+          "widgetItemRiskScoreType": "absulate"
+        },
+        {
+          "widgetType": "item",
+          "widgetDescription": "Internet/Self check-in/Other non Face to Face ",
+          "widgetItemRiskScore": "5",
+          "widgetItemRiskScoreType": "absulate"
+        }
+      ]
+    },
+    {
+      "widgetType": "group",
+      "widgetOrder": "2",
+      "widgetId": "2",
+      "widgetDescription": "Geographic Risks",
+      "widgetItem": [
+        {
+          "widgetType": "item",
+          "widgetDescription": "Resident Bangladesh",
+          "widgetItemRiskScore": "1",
+          "widgetItemRiskScoreType": "absulate"
+        },
+        {
+          "widgetType": "item",
+          "widgetDescription": "Non-resident Bangladesh",
+          "widgetItemRiskScore": "2",
+          "widgetItemRiskScoreType": "absulate"
+        },
+        {
+          "widgetType": "group",
+          "widgetDescription": "Foreign Citizen",
+          "widgetOrder": "21",
+          "widgetId": "21",
+          "widgetSubDescription": "Risk classification of country of origin",
+          "widgetItem": [
+            {
+              "widgetType": "item",
+              "widgetDescription": "Does a client's country of citizenship feature in FATF/EU/OFAC/UN Black List/Grey List ?",
+              "widgetItemRiskScore": "0/5",
+              "widgetItemRiskScoreType": "boolean"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "widgetType": "group",
+      "widgetOrder": "3",
+      "widgetId": "3",
+      "widgetDescription": "Type of Customer",
+      "widgetItem": [
+        {
+          "widgetType": "item",
+          "widgetDescription": "Does a client's country of citizenship feature in FATF/EU/OFAC/UN Black List/Grey List ?",
+          "widgetItemRiskScore": "0/5",
+          "widgetItemRiskScoreType": "boolean"
+        },
+        {
+          "widgetType": "item",
+          "widgetDescription": "Is client's family/close associates related to PEP/Cheif or High Official of INternational Organization ?",
+          "widgetItemRiskScore": "0/5",
+          "widgetItemRiskScoreType": "boolean"
+        },
+        {
+          "widgetType": "item",
+          "widgetDescription": "Is client a IP? Or his family/close associates related to IP?",
+          "widgetItemRiskScore": "0/5",
+          "widgetItemRiskScoreType": "boolean"
+        }
+      ]
+    },
+    {
+      "widgetType": "group",
+      "widgetOrder": "4",
+      "widgetId": "4",
+      "widgetDescription": "Product and Channel Risk (Type of Product)",
+      "widgetItem": [
+        {
+          "widgetType": "item",
+          "widgetDescription": "Savings account",
+          "widgetItemRiskScore": "1",
+          "widgetItemRiskScoreType": "absulate"
+        },
+        {
+          "widgetType": "item",
+          "widgetDescription": "Current account",
+          "widgetItemRiskScore": "4",
+          "widgetItemRiskScoreType": "absulate"
+        },
+        {
+          "widgetType": "item",
+          "widgetDescription": "FDR",
+          "widgetItemRiskScore": "3",
+          "widgetItemRiskScoreType": "absulate"
+        },
+        {
+          "widgetType": "item",
+          "widgetDescription": "Deposit Scheme upto 12 lac",
+          "widgetItemRiskScore": "1",
+          "widgetItemRiskScoreType": "absulate"
+        },
+        {
+          "widgetType": "item",
+          "widgetDescription": "Deposit Scheme above 12 lac",
+          "widgetItemRiskScore": "3",
+          "widgetItemRiskScoreType": "absulate"
+        },
+        {
+          "widgetType": "item",
+          "widgetDescription": "Forex account",
+          "widgetItemRiskScore": "5",
+          "widgetItemRiskScoreType": "absulate"
+        },
+        {
+          "widgetType": "item",
+          "widgetDescription": "S.N.D.",
+          "widgetItemRiskScore": "3",
+          "widgetItemRiskScoreType": "absulate"
+        },
+        {
+          "widgetType": "item",
+          "widgetDescription": "R.F.C.D.",
+          "widgetItemRiskScore": "5",
+          "widgetItemRiskScoreType": "absulate"
+        }
+      ]
+    },
+    {
+      "widgetType": "group",
+      "widgetOrder": "5",
+      "widgetId": "5",
+      "widgetDescription": "Business and Activity Risk",
+      "widgetItem": [
+        {
+          "widgetType": "group",
+          "widgetOrder": "51",
+          "widgetId": "51",
+          "widgetDescription": "Business",
+          "widgetItem": [
+            {
+              "widgetType": "item",
+              "widgetDescription": "Jeweller/Gold/Valuable Metals Business",
+              "widgetItemRiskScore": "5",
+              "widgetItemRiskScoreType": "absulate"
+            },
+            {
+              "widgetType": "item",
+              "widgetDescription": "Money Change/Courier Service/Mobile Banking Agent",
+              "widgetItemRiskScore": "5",
+              "widgetItemRiskScoreType": "absulate"
+            },
+            {
+              "widgetType": "item",
+              "widgetDescription": "Real Estate Developer/Agent",
+              "widgetItemRiskScore": "5",
+              "widgetItemRiskScoreType": "absulate"
+            },
+            {
+              "widgetType": "item",
+              "widgetDescription": "Promoter/Contraction: Construction Projects",
+              "widgetItemRiskScore": "5",
+              "widgetItemRiskScoreType": "absulate"
+            },
+            {
+              "widgetType": "item",
+              "widgetDescription": "Art and Antiquities Dealer",
+              "widgetItemRiskScore": "5",
+              "widgetItemRiskScoreType": "absulate"
+            },
+            {
+              "widgetType": "item",
+              "widgetDescription": "Restaurant/Bar/Night Club/Parlour/Hotel",
+              "widgetItemRiskScore": "5",
+              "widgetItemRiskScoreType": "absulate"
+            },
+            {
+              "widgetType": "item",
+              "widgetDescription": "Export/Import",
+              "widgetItemRiskScore": "5",
+              "widgetItemRiskScoreType": "absulate"
+            },
+            {
+              "widgetType": "item",
+              "widgetDescription": "Manpower export",
+              "widgetItemRiskScore": "5",
+              "widgetItemRiskScoreType": "absulate"
+            },
+            {
+              "widgetType": "item",
+              "widgetDescription": "Firearms",
+              "widgetItemRiskScore": "5",
+              "widgetItemRiskScoreType": "absulate"
+            },
+            {
+              "widgetType": "item",
+              "widgetDescription": "RMG/Garments Accessories/Buying House",
+              "widgetItemRiskScore": "5",
+              "widgetItemRiskScoreType": "absulate"
+            },
+            {
+              "widgetType": "item",
+              "widgetDescription": "Share/Stocks Investor",
+              "widgetItemRiskScore": "5",
+              "widgetItemRiskScoreType": "absulate"
+            },
+            {
+              "widgetType": "item",
+              "widgetDescription": "Software/Information and Technology Business",
+              "widgetItemRiskScore": "5",
+              "widgetItemRiskScoreType": "absulate"
+            },
+            {
+              "widgetType": "item",
+              "widgetDescription": "Travel Agent",
+              "widgetItemRiskScore": "4",
+              "widgetItemRiskScoreType": "absulate"
+            },
+            {
+              "widgetType": "item",
+              "widgetDescription": "Merchant and over 10 million takas invested in business",
+              "widgetItemRiskScore": "4",
+              "widgetItemRiskScoreType": "absulate"
+            },
+            {
+              "widgetType": "item",
+              "widgetDescription": "Freight/Shipping/Cargo Agent",
+              "widgetItemRiskScore": "4",
+              "widgetItemRiskScoreType": "absulate"
+            },
+            {
+              "widgetType": "item",
+              "widgetDescription": "Automobiles business (New or Reconditioned)",
+              "widgetItemRiskScore": "4",
+              "widgetItemRiskScoreType": "absulate"
+            },
+            {
+              "widgetType": "item",
+              "widgetDescription": "Leather/Leather goods Business",
+              "widgetItemRiskScore": "4",
+              "widgetItemRiskScoreType": "absulate"
+            },
+            {
+              "widgetType": "item",
+              "widgetDescription": "Construction Materials Trades",
+              "widgetItemRiskScore": "4",
+              "widgetItemRiskScoreType": "absulate"
+            },
+            {
+              "widgetType": "item",
+              "widgetDescription": "Business Agent",
+              "widgetItemRiskScore": "3",
+              "widgetItemRiskScoreType": "absulate"
+            },
+            {
+              "widgetType": "item",
+              "widgetDescription": "Thread/”Jhut” Merchant",
+              "widgetItemRiskScore": "3",
+              "widgetItemRiskScoreType": "absulate"
+            },
+            {
+              "widgetType": "item",
+              "widgetDescription": "Transport  Operator",
+              "widgetItemRiskScore": "3",
+              "widgetItemRiskScoreType": "absulate"
+            },
+            {
+              "widgetType": "item",
+              "widgetDescription": "Tobacco and Cigarettes Business",
+              "widgetItemRiskScore": "3",
+              "widgetItemRiskScoreType": "absulate"
+            },
+            {
+              "widgetType": "item",
+              "widgetDescription": "Amusement Park/ENtertainment Provider",
+              "widgetItemRiskScore": "3",
+              "widgetItemRiskScoreType": "absulate"
+            },
+            {
+              "widgetType": "item",
+              "widgetDescription": "Motor Parts Trader/Workshop",
+              "widgetItemRiskScore": "3",
+              "widgetItemRiskScoreType": "absulate"
+            },
+            {
+              "widgetType": "item",
+              "widgetDescription": "Small Business (Investment below BDT 5 million)",
+              "widgetItemRiskScore": "2",
+              "widgetItemRiskScoreType": "absulate"
+            },
+            {
+              "widgetType": "item",
+              "widgetDescription": "Computer/Mobile Phone Dealer",
+              "widgetItemRiskScore": "2",
+              "widgetItemRiskScoreType": "absulate"
+            },
+            {
+              "widgetType": "item",
+              "widgetDescription": "Manufacturer (except, weapons)",
+              "widgetItemRiskScore": "2",
+              "widgetItemRiskScoreType": "absulate"
+            },
+            {
+              "widgetType": "item",
+              "widgetDescription": "Others: (Please State Below and circular numerical score as needed)",
+              "widgetItemRiskScore": "1-5",
+              "widgetItemRiskScoreType": "range"
+            }
+          ]
+        },
+        {
+          "widgetType": "group",
+          "widgetOrder": "52",
+          "widgetId": "52",
+          "widgetDescription": "Profession",
+          "widgetItem": [
+            {
+              "widgetType": "item",
+              "widgetDescription": "Pilot/Flight Attendant",
+              "widgetItemRiskScore": "5",
+              "widgetItemRiskScoreType": "absulate"
+            },
+            {
+              "widgetType": "item",
+              "widgetDescription": "Trustee",
+              "widgetItemRiskScore": "5",
+              "widgetItemRiskScoreType": "absulate"
+            },
+            {
+              "widgetType": "item",
+              "widgetDescription": "Professional(Journalist, Layer, Doctor, Engineer, Character Account, ect.)",
+              "widgetItemRiskScore": "4",
+              "widgetItemRiskScoreType": "absulate"
+            },
+            {
+              "widgetType": "item",
+              "widgetDescription": "Director (Private/Public Limited Company)",
+              "widgetItemRiskScore": "4",
+              "widgetItemRiskScoreType": "absulate"
+            },
+            {
+              "widgetType": "item",
+              "widgetDescription": "High Official of Multinational Company (MNC)",
+              "widgetItemRiskScore": "4",
+              "widgetItemRiskScoreType": "absulate"
+            },
+            {
+              "widgetType": "item",
+              "widgetDescription": "Homemaker",
+              "widgetItemRiskScore": "4",
+              "widgetItemRiskScoreType": "absulate"
+            },
+            {
+              "widgetType": "item",
+              "widgetDescription": "Information Technology (IT) sector employee",
+              "widgetItemRiskScore": "4",
+              "widgetItemRiskScoreType": "absulate"
+            },
+            {
+              "widgetType": "item",
+              "widgetDescription": "Athlete/Media Celebrity/Producer/Director",
+              "widgetItemRiskScore": "4",
+              "widgetItemRiskScoreType": "absulate"
+            },
+            {
+              "widgetType": "item",
+              "widgetDescription": "Freelance Software Developer",
+              "widgetItemRiskScore": "4",
+              "widgetItemRiskScoreType": "absulate"
+            },
+            {
+              "widgetType": "item",
+              "widgetDescription": "Government service",
+              "widgetItemRiskScore": "3",
+              "widgetItemRiskScoreType": "absulate"
+            },
+            {
+              "widgetType": "item",
+              "widgetDescription": "Landlord/Homeowner",
+              "widgetItemRiskScore": "3",
+              "widgetItemRiskScoreType": "absulate"
+            },
+            {
+              "widgetType": "item",
+              "widgetDescription": "Private Service Managerial",
+              "widgetItemRiskScore": "3",
+              "widgetItemRiskScoreType": "absulate"
+            },
+            {
+              "widgetType": "item",
+              "widgetDescription": "Teacher (Public/Private/Autonomous Educational Institute)",
+              "widgetItemRiskScore": "2",
+              "widgetItemRiskScoreType": "absulate"
+            },
+            {
+              "widgetType": "item",
+              "widgetDescription": "Private Sector Employee",
+              "widgetItemRiskScore": "2",
+              "widgetItemRiskScoreType": "absulate"
+            },
+            {
+              "widgetType": "item",
+              "widgetDescription": "Self-employed Professional",
+              "widgetItemRiskScore": "2",
+              "widgetItemRiskScoreType": "absulate"
+            },
+            {
+              "widgetType": "item",
+              "widgetDescription": "Student",
+              "widgetItemRiskScore": "2",
+              "widgetItemRiskScoreType": "absulate"
+            },
+            {
+              "widgetType": "item",
+              "widgetDescription": "Retire",
+              "widgetItemRiskScore": "1",
+              "widgetItemRiskScoreType": "absulate"
+            },
+            {
+              "widgetType": "item",
+              "widgetDescription": "Farmer/Fisherman/Labourer",
+              "widgetItemRiskScore": "5",
+              "widgetItemRiskScoreType": "absulate"
+            },
+            {
+              "widgetType": "item",
+              "widgetDescription": "Others: (Please State Below and circular numerical score as needed)",
+              "widgetItemRiskScore": "1-5",
+              "widgetItemRiskScoreType": "range"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "widgetType": "group",
+      "widgetOrder": "6",
+      "widgetId": "6",
+      "widgetDescription": "Transactional Risks (What is the client’s Average yearly Transaction Worth?)",
+      "widgetItem": [
+        {
+          "widgetType": "item",
+          "widgetDescription": "<BDT 1 million",
+          "widgetItemRiskScore": "1",
+          "widgetItemRiskScoreType": "absulate"
+        },
+        {
+          "widgetType": "item",
+          "widgetDescription": "From BDT 1 million to 5 million",
+          "widgetItemRiskScore": "2",
+          "widgetItemRiskScoreType": "absulate"
+        },
+        {
+          "widgetType": "item",
+          "widgetDescription": "From BDT 5 million to 50 million (5 crores)",
+          "widgetItemRiskScore": "3",
+          "widgetItemRiskScoreType": "absulate"
+        }
+      ]
+    },
+    {
+      "widgetType": "group",
+      "widgetOrder": "7",
+      "widgetId": "7",
+      "widgetDescription": "Transparency Risk",
+      "widgetItem": [
+        {
+          "widgetType": "item",
+          "widgetDescription": "Des client has Provided credible source of funds?",
+          "widgetItemRiskScore": "5/1",
+          "widgetItemRiskScoreType": "boolean"
+        }
+      ]
+    }
+  ]
+}
