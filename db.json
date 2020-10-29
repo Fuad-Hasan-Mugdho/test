@@ -25,18 +25,6 @@
           "widgetDescription": "Direct Sales Agent",
           "widgetItemRiskScore": "2",
           "widgetItemRiskScoreType": "absulate"
-        },
-        {
-          "widgetType": "item",
-          "widgetDescription": "Walk-in",
-          "widgetItemRiskScore": "3",
-          "widgetItemRiskScoreType": "absulate"
-        },
-        {
-          "widgetType": "item",
-          "widgetDescription": "Internet/Self check-in/Other non Face to Face ",
-          "widgetItemRiskScore": "5",
-          "widgetItemRiskScoreType": "absulate"
         }
       ]
     },
@@ -86,18 +74,6 @@
           "widgetDescription": "Does a client's country of citizenship feature in FATF/EU/OFAC/UN Black List/Grey List ?",
           "widgetItemRiskScore": "0/5",
           "widgetItemRiskScoreType": "boolean"
-        },
-        {
-          "widgetType": "item",
-          "widgetDescription": "Is client's family/close associates related to PEP/Cheif or High Official of INternational Organization ?",
-          "widgetItemRiskScore": "0/5",
-          "widgetItemRiskScoreType": "boolean"
-        },
-        {
-          "widgetType": "item",
-          "widgetDescription": "Is client a IP? Or his family/close associates related to IP?",
-          "widgetItemRiskScore": "0/5",
-          "widgetItemRiskScoreType": "boolean"
         }
       ]
     },
@@ -117,42 +93,6 @@
           "widgetType": "item",
           "widgetDescription": "Current account",
           "widgetItemRiskScore": "4",
-          "widgetItemRiskScoreType": "absulate"
-        },
-        {
-          "widgetType": "item",
-          "widgetDescription": "FDR",
-          "widgetItemRiskScore": "3",
-          "widgetItemRiskScoreType": "absulate"
-        },
-        {
-          "widgetType": "item",
-          "widgetDescription": "Deposit Scheme upto 12 lac",
-          "widgetItemRiskScore": "1",
-          "widgetItemRiskScoreType": "absulate"
-        },
-        {
-          "widgetType": "item",
-          "widgetDescription": "Deposit Scheme above 12 lac",
-          "widgetItemRiskScore": "3",
-          "widgetItemRiskScoreType": "absulate"
-        },
-        {
-          "widgetType": "item",
-          "widgetDescription": "Forex account",
-          "widgetItemRiskScore": "5",
-          "widgetItemRiskScoreType": "absulate"
-        },
-        {
-          "widgetType": "item",
-          "widgetDescription": "S.N.D.",
-          "widgetItemRiskScore": "3",
-          "widgetItemRiskScoreType": "absulate"
-        },
-        {
-          "widgetType": "item",
-          "widgetDescription": "R.F.C.D.",
-          "widgetItemRiskScore": "5",
           "widgetItemRiskScoreType": "absulate"
         }
       ]
@@ -312,30 +252,6 @@
               "widgetDescription": "Motor Parts Trader/Workshop",
               "widgetItemRiskScore": "3",
               "widgetItemRiskScoreType": "absulate"
-            },
-            {
-              "widgetType": "item",
-              "widgetDescription": "Small Business (Investment below BDT 5 million)",
-              "widgetItemRiskScore": "2",
-              "widgetItemRiskScoreType": "absulate"
-            },
-            {
-              "widgetType": "item",
-              "widgetDescription": "Computer/Mobile Phone Dealer",
-              "widgetItemRiskScore": "2",
-              "widgetItemRiskScoreType": "absulate"
-            },
-            {
-              "widgetType": "item",
-              "widgetDescription": "Manufacturer (except, weapons)",
-              "widgetItemRiskScore": "2",
-              "widgetItemRiskScoreType": "absulate"
-            },
-            {
-              "widgetType": "item",
-              "widgetDescription": "Others: (Please State Below and circular numerical score as needed)",
-              "widgetItemRiskScore": "1-5",
-              "widgetItemRiskScoreType": "range"
             }
           ]
         },
@@ -387,78 +303,6 @@
               "widgetItemRiskScore": "4",
               "widgetItemRiskScoreType": "absulate"
             },
-            {
-              "widgetType": "item",
-              "widgetDescription": "Athlete/Media Celebrity/Producer/Director",
-              "widgetItemRiskScore": "4",
-              "widgetItemRiskScoreType": "absulate"
-            },
-            {
-              "widgetType": "item",
-              "widgetDescription": "Freelance Software Developer",
-              "widgetItemRiskScore": "4",
-              "widgetItemRiskScoreType": "absulate"
-            },
-            {
-              "widgetType": "item",
-              "widgetDescription": "Government service",
-              "widgetItemRiskScore": "3",
-              "widgetItemRiskScoreType": "absulate"
-            },
-            {
-              "widgetType": "item",
-              "widgetDescription": "Landlord/Homeowner",
-              "widgetItemRiskScore": "3",
-              "widgetItemRiskScoreType": "absulate"
-            },
-            {
-              "widgetType": "item",
-              "widgetDescription": "Private Service Managerial",
-              "widgetItemRiskScore": "3",
-              "widgetItemRiskScoreType": "absulate"
-            },
-            {
-              "widgetType": "item",
-              "widgetDescription": "Teacher (Public/Private/Autonomous Educational Institute)",
-              "widgetItemRiskScore": "2",
-              "widgetItemRiskScoreType": "absulate"
-            },
-            {
-              "widgetType": "item",
-              "widgetDescription": "Private Sector Employee",
-              "widgetItemRiskScore": "2",
-              "widgetItemRiskScoreType": "absulate"
-            },
-            {
-              "widgetType": "item",
-              "widgetDescription": "Self-employed Professional",
-              "widgetItemRiskScore": "2",
-              "widgetItemRiskScoreType": "absulate"
-            },
-            {
-              "widgetType": "item",
-              "widgetDescription": "Student",
-              "widgetItemRiskScore": "2",
-              "widgetItemRiskScoreType": "absulate"
-            },
-            {
-              "widgetType": "item",
-              "widgetDescription": "Retire",
-              "widgetItemRiskScore": "1",
-              "widgetItemRiskScoreType": "absulate"
-            },
-            {
-              "widgetType": "item",
-              "widgetDescription": "Farmer/Fisherman/Labourer",
-              "widgetItemRiskScore": "5",
-              "widgetItemRiskScoreType": "absulate"
-            },
-            {
-              "widgetType": "item",
-              "widgetDescription": "Others: (Please State Below and circular numerical score as needed)",
-              "widgetItemRiskScore": "1-5",
-              "widgetItemRiskScoreType": "range"
-            }
           ]
         }
       ]
